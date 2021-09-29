@@ -7,15 +7,15 @@ import BestBooks from "./BestBooks";
 import Login from "./Login";
 import Profile from "./componants/Profile";
 import { withAuth0 } from "@auth0/auth0-react"; // with Auth0
-
-// import LogoutButton from "./componants/LogoutButton";
-// import LoginButton from "./componants/LoginButton";
+// import axios from "axios";
+// import AddBookModel from "./componants/AddBookModel";
 
 class App extends React.Component {
+  // rendering
   render() {
     // console.log("app", this.props);
     const isAuthenticated = this.props.auth0.isAuthenticated;
-    console.log(isAuthenticated);
+    // console.log(isAuthenticated);
     return (
       <>
         <Router>
