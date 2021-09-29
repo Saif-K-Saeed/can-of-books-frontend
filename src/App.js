@@ -6,16 +6,15 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import BestBooks from "./BestBooks";
 import Login from "./Login";
 import Profile from "./componants/Profile";
-import { withAuth0 } from "@auth0/auth0-react"; // with Auth0
-// import axios from "axios";
-// import AddBookModel from "./componants/AddBookModel";
+import { withAuth0 } from "@auth0/auth0-react";
+
 
 class App extends React.Component {
-  // rendering
+
   render() {
-    // console.log("app", this.props);
+
     const isAuthenticated = this.props.auth0.isAuthenticated;
-    // console.log(isAuthenticated);
+
     return (
       <>
         <Router>
